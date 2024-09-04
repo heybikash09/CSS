@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows and color </title>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ course</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nostrum asperiores doloribus distinctio commodi unde aliquid
+                 enim dolor nulla dicta tempora iure, dolores, reiciendis, impedit
+                  corporis ex! Veritatis asperiores illo quia!
+            </p> 
+        </div>
+        <div class="card" id="card2">
+            <h2>This is C++ course</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nostrum asperiores doloribus distinctio commodi unde aliquid
+                 enim dolor nulla dicta tempora iure, dolores, reiciendis, impedit
+                  corporis ex! Veritatis asperiores illo quia!
+            </p> 
+        </div>
+        <div class="card" id="card3">
+            <h2>This is C++ course</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Nostrum asperiores doloribus distinctio commodi unde aliquid
+                 enim dolor nulla dicta tempora iure, dolores, reiciendis, impedit
+                  corporis ex! Veritatis asperiores illo quia!
+            </p> 
+        </div>
+    </div>
+    <style>
+        .card{
+            background-color: #e8fe7b;
+            color: black;
+            border: 2px solid rgb(136, 211, 240);
+            border-radius: 7px;
+            margin-top: 10px;
+            margin: 10px auto;
+            width: 400px;
+            font-weight:lighter;
+
+            /* box-shadow:-- offset-x   offset-y   color */
+            /* box-shadow:-- offset-x   offset-y   blur-radius  color */
+            /* box-shadow:-- offset-x   offset-y  blur-radius spread-radius  color */
+
+            box-shadow: 10px 10px 2em red;
+        }
+        h2{
+            margin-left: 4em ;
+        }
+        .container{
+            display: flex;
+        }
+    </style>
+</body>
+</html>

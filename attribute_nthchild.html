@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child</title>
+</head>
+<body>
+        <div class="container">
+            <h1><a href="https://www.google.com" target="_blank">click for google</a></h1>
+            <h2><a href="https://facebook.com" target="_top">click for facebook</a></h2>
+            <form action="" class="form">
+                <input type="text" placeholder="enter your name">
+                <input type="password" placeholder="enter your password">
+            </form>
+            <ul>
+                <li class="item" id="item1">item1</li>
+                <li class="item" id="item2">item2</li>
+                <li class="item" id="item3">item3</li>
+                <li class="item" id="item4">item4</li>
+                <li class="item" id="item5">item5</li>
+            </ul>
+
+        </div> 
+        <style>
+            input{
+                display: block;
+            }
+            .container{
+                display: block;
+                width: 300px;
+                margin: auto;
+            }
+            /* pseudo selector for selecting a specific element  */
+            input[type='text']{
+                padding: 10px;
+                border: 2px solid rgb(241, 8, 8);
+            }
+
+            a[target]{
+                color: brown;
+            }
+            a[target='_top']{
+                color:violet ;
+            }
+            li:nth-child(3){
+                color: aqua;
+            }
+
+            /* below proporty work for all 3rd no element  */
+            li:nth-child(2n+1){
+                color: red;
+            }
+            li:nth-child(even){
+                color: rgb(64, 0, 255);
+            }
+            li:nth-child(odd){
+                color: rgb(0, 255, 30);
+            }
+
+        </style>
+</body>
+</html>

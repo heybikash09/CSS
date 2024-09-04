@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRansform in CSS</title>
+</head>
+<body>
+    <div class="container">
+        <h2>This is the CSS Transition Tutorial </h2>
+        <div id="box">
+            I am the Box 
+        </div>
+    </div>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        .container{
+            display: block;
+            width: 100%;
+            height: 45.7em;
+            background-color: #18f5be;
+        }
+        #box{
+            background-color:green;
+            width: 200px;
+            height: 200px;
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:2em;
+            border-radius: 10px;
+            border: 5px solid red;
+            margin: 5em 19em;
+            transition:all 1s  ease-in-out;
+            }
+         #box:hover
+         {
+            /* it roatate the box  */
+         /* transform: rotate(9360deg); */
+
+             /* transform:skew(45deg);  */
+             /* it bend the element digonally */
+
+           /* it multiple the size of the object given in the functoin */
+            transform:scale(2) skew(45deg); 
+
+            /* transform:translateX(600px); */
+          /* transform:translateY(200px);
+           transform:translate(200px,200px);
+           */
+         }
+    </style>
+</body>
+</html>

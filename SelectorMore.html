@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selector </title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><p>This is another paragraph inside li</p></li>
+            <li>this will not ger affected </li>
+        </ul>
+        <p>This is a paragraph</p>
+    </div>
+    <p>This is a paragraph outside the div </p>
+
+    <style>
+
+        div li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+
+
+        /* " > " It means the left side parent's (div) child right side(p) would changed  */
+        /* div > p{
+            color: blue;
+            background-color: #cfe896;
+            font-weight: bold;
+        } */
+
+
+        /* " + " -> it means the right side is immediate sibling of left side   */
+        div + p
+        {
+            color: blue;
+            background-color: #cfe896;
+            font-weight: bold;
+        }
+
+        
+    </style>
+</body>
+</html>

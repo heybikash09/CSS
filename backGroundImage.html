@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image </title>
+</head>
+<body>
+    <div class="container">
+        I am the Box 
+    </div>
+</body>
+<style>
+    .container{
+        width: 300px;
+        height: 300px;
+        border: 2px solid red;
+        text-align: center;
+        margin:  8em auto;
+        background-image: url('food.bmp');
+        /* it set the bg image with repeatedly in x and y axis  */
+        /* background-repeat: no-repeat; */
+        /* background-repeat:repeat-x;
+        background-repeat:repeat-y; */
+        /* it avoid the repeatation of the image  */
+/* 
+        background-position-x:left center right; */
+         /* adjust in x axis  */
+
+        /* background-position-y:top center bottom; */
+        /* adjust in y axis  */
+
+        background-position:  center;
+        /*it center the image */
+        background-size:contain;
+
+        /* background-size: 20px 30px; */
+     /* background-size: 1:width,2:height 
+     if you give only one's size then bidefault it take it for height and width will be auto */
+     left:100px;
+    }
+</style>
+</html>

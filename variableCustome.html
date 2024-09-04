@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable and Customes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div>
+    <style>
+
+            /* For making global variable   */
+            :root{
+                --box-color1:green;
+            }
+
+        .box{
+            /* " -- " double dash for create a variable  */
+            --box-color1:green;
+            --box-color2:rgb(38, 209, 228);
+
+
+            width: 200px;
+            height: 200px;
+            background-color: #ad1616;
+            margin-left: 20px;
+            
+            /* we can use css varibale proporty by using var()  */
+
+            box-shadow: 15px 15px 15px var(--box-color2);
+            /* var() only work in between the bracket in which the variable exist  */
+
+            }
+            .container{
+                display: flex;
+                background-color: var(--box-color1);
+                height: 400px;
+            }
+    </style>
+</body>
+</html>

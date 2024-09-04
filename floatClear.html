@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Claer Explanation</title>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <p>
+                <h2>fruits</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex illo eaque quas 
+            eum quia laboriosam, in qui nulla quibusdam!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aut rerum quasi quos 
+            alias facilis, aperiam, numquam placeat eius assumenda eum hic, 
+            amet doloribus deleniti ullam reprehenderit sunt! Libero mollitia nemo pariatur ipsum ea!
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <p>
+                <h2>computer</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex illo eaque quas 
+                eum quia laboriosam, in qui nulla quibusdam!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora magni sint 
+                nesciunt eveniet at unde maxime veritatis eius illo dolore quae, minima ullam. Qui laborum fugiat, a quidem explicabo maiores culpa magni veritatis hic!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, perferendis dignissimos. Vero eaque nemo eos excepturi, voluptates quasi ad illum!
+                </p>
+
+        </div>
+        <div id="stationary" class="item">
+            <p>
+                <h2>stationary</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex illo eaque quas 
+                eum quia laboriosam, in qui nulla quibusdam!
+                
+            </p>
+        </div>
+    </div>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+          .container{
+            width: 900px;
+            border: 5px solid red;
+            border-radius: 20px;
+            background-color: #f58787;
+            margin: auto;
+        }
+        .item{
+            border: 2px solid green;
+            margin: 20px ;
+            border-radius: 10px;
+            background-color: #e1f190;
+            color: rgb(15, 133, 236);
+        }
+         #fruits{
+        float: left;
+        width:41%;
+        }
+        #computer{
+            float: right;
+            width:43%;
+        } 
+        #stationary{
+            /* float: left; */
+          width: 95%;
+          /* clear:left ;
+          clear: right; */
+          clear: both;
+          /* this method is use to avoid overlap left and rigt side 
+          if u give left then left side overllap will avoid & if float is right then right side will avoid 
+          */
+        } 
+    </style>
+</body>
+</html>

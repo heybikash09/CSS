@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector and more Design</title>
+</head>
+<body>
+    <div id="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum 
+            assumenda accusantium vel officia excepturi consequatur quaerat.
+             Saepe alias nesciunt adipisci nulla harum voluptas aspernatur dolorem 
+             iure aut quis? Fuga, dicta.
+        </p>
+        <a href="https://www.google.com" class="btn"  id="link"> search__google</a>
+        <button class="btn" id="mnbtn">contact Us</button>
+    </div>
+
+    <style>
+        #container{
+            width: 600px;
+            margin: auto;
+            padding: 30px; 
+            background-color: #8ee8a2;
+            border: 3px solid red;
+        }
+        .btn{
+            background-color: red;
+            padding: 5px;
+            color: white;
+            border: none;
+            border-radius: 5px ;
+        }
+        #link{
+            text-decoration:none/* it ignore all the text decoration */
+
+        }
+        /*When arrow mark is over the selected area then occures 
+        the respective work written between selected area*/
+        #link:hover{
+           background-color: #821cff;
+        }
+        /*Visited means after you visit the corresponding link it 
+        do the respective work written between selected area*/
+        /* #link:visited{
+          
+            background-color: #f3ef0e;
+            color: black;
+        } */
+        /*Active means when you double tap the selected area it 
+        will gone to active mood and all work will becomes appear witten between 
+        active selected area */
+        #link:active{
+            background-color: #0edffa;
+            color: black;
+        }
+        /* #mnbtn{
+        } */
+</style>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation menu</title>
+</head>
+<body>
+    <header>
+        <nav id="container">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <!-- <div id="srch" style="color: azure;">
+                    this is search
+                </div> -->
+            </ul>
+                         
+        </nav>
+    </header>
+    <style>
+        #container{
+           background-color: #081207;
+           border-radius: 10px;
+           box-sizing: border-box;
+        }
+         /* #srch{
+            width: 300px;
+            height: 40px; 
+        } */
+        a{
+            color: rgb(248, 246, 246);
+            text-decoration: none;
+        }
+        ul{     
+            width: 1400px;
+            position: relative;
+            overflow: auto;/*When we use float 
+            it over flow the parent area so it will disappear
+            to avoid this we add over flow auto */
+        }
+        ul li{
+            padding: 8px;
+            float: left;
+            list-style: none;
+            margin: 10px;
+        }
+    </style>
+</body>
+</html>

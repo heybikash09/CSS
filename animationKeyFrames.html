@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> animation and keyframes </title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           I am The Box
+        </div>
+    </div>
+</body>
+<style>
+    .box{
+        background-color: rgb(44, 153, 231);
+        border: 5px solid red;
+        width:200px;
+        height: 200px;
+        border-radius: 10px;
+        position: relative;
+        /* name declare for keyframe work we would use name at keyframe  */
+        animation-name: bkkyy;
+
+        /* duration of animation  */
+        animation-duration: 2s;
+
+        /* number of time the animation work  */
+        animation-iteration-count: 3;
+         
+        /* Where the animation stop  */
+        /* forward means it stops at last point  */
+        animation-fill-mode:both;
+
+        /* the movement type of the animation  */
+        /* ease-in - slow then rapid 
+            ease-out - rapid then slow 
+            ease-in-out -  slow-rapid-slow*/
+         animation-timing-function:ease-in-out;
+
+         /* it stops for time given in delay at starting  */
+         animation-delay: 3s;
+
+         /* it reverse the direction of the animation  */
+         animation-direction:normal;
+
+        /*  We can make all the upper property in one line   */
+
+        /* animation: animation-name   animation-duration   animation-timimg-function  
+         animation-delay  animation-itteration-count animation-full-mode  ; */
+
+        /* animation: bkkyy 2s ease-in-out 2s 3 forwards; */
+    }
+    @keyframes bkkyy{
+        from{
+            width: 200px;
+        }
+        to{
+            width: 800px;
+        }
+    }
+    @keyframes bkkyy
+    {    
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 300px;
+            left: 0px;
+        }
+        75%{
+            top: 300px;
+            left: 300px;
+        }
+        100%{
+            top: 0px;
+            left: 300px;
+        }
+
+    }
+    .container{
+        background-color: #aad2ff;
+    }
+</style>
+</html>

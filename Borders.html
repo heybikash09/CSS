@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boreders ,Background , Height and Width</title>
+</head>
+<body>
+    <p id="firstPara" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, consequuntur
+         ex. Sed similique eos odit nobis quibusdam assumenda ad natus est cum amet
+         voluptatum, sit itaque ab laborum nulla deserunt.
+        </p>
+    <p id="secondPara" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, consequuntur
+         ex. Sed similique eos odit nobis quibusdam assumenda ad natus est cum amet
+         voluptatum, sit itaque ab laborum nulla deserunt.
+        </p>
+        <p id="thirdPara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ad quod 
+            eos. Molestiae esse deleniti deserunt? Placeat nobis animi delectus 
+            veniam ea! Adipisci quo vel, nihil accusantium repudiandae atque porro?
+        </p>
+        <style>
+            #firstPara{
+                background-color: #d62020;
+                height: 100px;
+                width:400px ;
+
+                /*We can also make the border proporty in one line */
+                border: 4px greenyellow  solid;
+                /* border-width: 9px;
+                border-color: rgb(9, 33, 33);
+                border-style: solid; */
+                border-radius: 10px;
+            }
+            #secondPara{
+                background-color: #ea22a7;
+                height: 100px;
+                width:400px ;
+
+                /*We can also make it in one line */
+                border: 4px rgb(105, 26, 234)  solid;
+                /* border-width: 9px;
+                border-color: rgb(9, 33, 33);
+                border-style: solid; */
+                border-radius: 10px;
+            }
+            #thirdPara{
+                background-color: #3699ea;
+                height: 400px;
+                width: 400px;
+                border: 3px solid green ;
+                border-radius:10px; 
+                background-image: url('itachi.jpg');
+                background-size:  100px;
+                /* background-repeat:repeat-y ; */
+                /* background-repeat:repeat-x ; */
+                /* in this way we could repeat the img in x and  y-axis */
+                background-repeat: no-repeat;
+                background-position:bottom left;
+                /* We can positioned a img by this method*/
+                
+            }
+        </style>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+</head>
+<body style="background-color: aqua;">
+        <div class="container">
+            <h2>This is the CSS Transition Tutorial </h2>
+            <div id="box">
+                I am the Box 
+            </div>
+        </div>
+        <style>
+            .container{
+                display: block;
+                margin-left: 34em;
+              
+
+            }
+            #box{
+                background-color:green;
+                width: 200px;
+                height: 200px;
+                color: aliceblue;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size:2em;
+                border-radius: 10px;
+                border: 5px solid red;
+                margin-left: 2em;
+
+                /* transition-property: background-color;
+                transition-duration: 2s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 2s; */
+            /* We can also make it in one line 
+            ---> Transition short hand property in ine line  */
+            transition:all 1s ease-in-out 0.1s 2s;
+
+                /* if we have to transition multiple property then make the proporty name 'all' */
+                /* transition: all 1s ease-in-out 0.1s; */
+                }
+            #box:hover{
+                background-color: violet;   
+                transform: translateX(200px);
+            }
+
+        </style>
+</body>
+</html>

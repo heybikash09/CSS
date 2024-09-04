@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive and Units</title>
+</head>
+<body>
+        <div id="container">
+            <h2 id="first">I am the first box </h2>
+            <h2 id="second">I am the second box </h2>
+            <h2 id="third">I am the third box </h2>
+        </div>
+
+
+    <style>
+
+        html{
+            font-size: 25px;
+        }
+        /* Various ways to make a web responsive */
+        /* 1--setting up the view port
+           2--Use the max-Width or Max-Height
+           3--Using css media queries 
+           4--Use rem,em,vw,vh and units over pixels  */
+        #container
+        {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        #first{
+            font-size: 2em; /* actual size 40px */
+            /* It means font size 2 times greater than the parent font size */
+
+            padding: 2em; /* actual size 80px */
+            /* It means padding size 2 times of the current font size  */
+        }
+        #second{
+            font-size: 2rem;
+            /*  rem unit : means the size increase 2 times according to base size ( HTML size )*/
+
+            border: 2px solid red;
+            height: 50vh;  /*it set the height accordig to view port height */  
+            width: 50vw;  /*it set the width accordig to view port width */
+        }
+    </style>
+</body>
+</html>

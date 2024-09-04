@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media QUeries !!</title>
+</head>
+<body>
+        <div id="container">
+            <div class="box" id="box1"> I AM IPHONE </div>
+            <div class="box" id="box2"> I AM GALAXY  </div>
+            <div class="box" id="box3">I AM LAPTOP</div>
+        </div>
+</body>
+        <style>
+            #container{
+                border: 2px solid red;
+                font-size: 50px;
+                color: white;
+                /* display: none; */
+            }
+
+
+            .box{
+              display: none;
+            }
+            /* Media-query :- use for make a web responsive  */
+
+
+            /* for Iphone 12 pro   */
+            @media (min-width:390px) and (max-width:400px){
+              #box1{
+                display: block;
+                background-color: #3c07c1;
+                border: 2px solid brown;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+
+                /* for Ipad    */
+            @media (min-width:800px) and (max-width:810px){
+            #box2{
+                display: block;
+                background-color: #0bed5e;
+                border: 2px solid brown;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+            /* forlaptop */
+            @media (min-width:1430px) and (max-width:1440px){
+              #box3{
+                display: block;
+                background-color: #ddf40e;
+                border: 2px solid brown;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+        </style>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTOR</title>
+</head>
+<body>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur  adipisicing elit. Natus ab mollitia</p>
+    <p id="Secondpara" class="redElement bgBlue">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+    <span>Im Bikash </span>
+    <footer>And Im Sammmmmm</footer>
+</body>
+<style>
+
+    /*
+    priority:: 
+    1-->inline selector (high)
+    2-->id selector (moderate)
+    3-->classes,pseudo and attribute selector(Lowest)
+
+    */
+    /* Id Selector */
+    #firstpara{
+        background-color: blue;
+        color: yellow;
+    }
+    /* class Selector */
+    .redElement{
+        background-color: #e81616;
+        color: blue;
+    }
+    /* group tag selector */
+    span,footer{
+        background-color: #f11b1b;
+        color: black;
+    }
+    /* tag selector */
+    p{
+        border-radius: 20px ;
+        border: 3px solid black;
+    }
+
+</style>
+</html>

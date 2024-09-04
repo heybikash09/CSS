@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position of the elemenet </title>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            /* background-color: yellow; */
+            margin: 5px;
+            display: inline-block;
+            text-align: center ;
+            /* text-align : center -- it means text horizontally center according to the text block  */
+            }
+            /* position:static(bydefault),relative,absolute,fixed and sticky */
+
+            #box3{
+                /* position: relative; */ 
+
+                /* relative: Means you can modify the element
+                 position according to its normal position */
+
+                 /* position: absolute; */
+
+                /* absolute: Means you can modify the eleent
+                 position according to its first parent */
+                position: relative;
+                top: 3em;
+                left: 5em;
+            }
+            #box4{
+                 position: sticky;
+
+                /*position: sticky means the element cuoldn't move from its normal position 
+                while scrolling and it sticky for it's parent container*/
+
+                /* position: fixed; */
+
+                /*position: fixed means the element cuoldn't move from its normal position 
+                while scrolling & its fixed for the entire webpage*/
+                 right: 40px; 
+                top: 30px;
+               
+            }
+            #container{
+                background-color: #eded0f;
+                border: 2px solid black;
+                height: 100em;
+                width: 200%;
+            }
+    </style>
+</body>
+</html>
